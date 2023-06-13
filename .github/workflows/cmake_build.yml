@@ -32,8 +32,14 @@ jobs:
 #       cmake ..
 #       make
 
-
-#    - name: Test
-#      run: bash test.sh
+      ##Note: need to connect the light strip first and then perform unit testing
+      #cd /home/pi/Desktop/Music_Visualization_RealTime/src/build
+      #ls -l
+      #cd tests
+      #xhost +SI:localuser:root
+      #su root
+      #./tests
+    - name: Test
+      run: cd src; cd build; ls -l; cd tests; ls -l
 
       
